@@ -36,7 +36,7 @@ Follow these steps to set up the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/SakshiThapliyal19/hashhacks.git
+git clone https://github.com/Divyansh-13/HealthConnect.git
 cd hashhacks
 ```
 
