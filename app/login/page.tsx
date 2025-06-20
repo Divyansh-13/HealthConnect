@@ -21,10 +21,15 @@ export default function Login() {
     setError("");
     
     try {
+      // Log before login attempt
+      console.log(`Attempting to login with email: ${email} and role: ${role}`);
+      
       await loginUser(email, password, role);
+      console.log("Login successful, redirecting to dashboard");
       router.push("/dashboard");
     } catch (err: any) {
-      setError(err.message || "Failed to log in");
+      console.error("Login error:", err);
+      setError(err.message || "Failed to log in. Please check your credentials or try again later.");
     } finally {
       setLoading(false);
     }
